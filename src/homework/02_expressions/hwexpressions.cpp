@@ -1,4 +1,6 @@
 #include "hwexpressions.h"
+#include<iostream>
+using namespace std;
 
 //example
 int add_numbers(int num1, int num2)
@@ -7,16 +9,15 @@ int add_numbers(int num1, int num2)
 }
 
 //write function code here
+const double tax_rate = 6.75;
 
-double multiply_tax_rate(double tax_rate, double meal_amount)
+double get_sales_tax_amount(double meal_amount)
 {
-	result = tax_rate * meal_amount;
-	return result;//1-b hw2
+	return meal_amount * (tax_rate/100);//1-b hw2
 }
 
-double multiply_rates(double meal_amount, double tip_rate)
+double get_tip_amount(double meal_amount, double tip_rate)
 {
-	result = meal_amount * tip_rate
-	return result;//1-d hw2
+	return meal_amount * (tip_rate/100);//1-d hw2
 }
 
