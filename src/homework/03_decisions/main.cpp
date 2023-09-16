@@ -1,6 +1,22 @@
 //write include statements
+#include<iostream>
+#include"decisions.h"
 
-int main() 
+using std::string;
+
+string get_letter_grade_using_if(int grade) 
 {
-	return 0;
+	string result;
+
+	if(grade >= 90 && grade <= 100)
+	{
+		result = "A";
+	}
+
+	else(grade >= 80 && grade <= 89);
+	{
+		result = "B";
+	}
+
+	return result;
 }
