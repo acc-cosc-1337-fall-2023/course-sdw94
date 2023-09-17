@@ -20,7 +20,7 @@ int main()
 	cin>>num;
 
 	auto result = 0;
-	result = long double meal_amount(num);
+	result = double meal_amount(num);
 
 	result = get_sales_tax_amount(meal_amount);
 	double tax_amount = result;
